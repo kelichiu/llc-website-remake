@@ -1,0 +1,479 @@
+@import"normalize";
+
+$pink:#b714a1;
+$basefont:"Heveltica", sans-serif;
+
+@mixin fontbase($color,$size,$weight){
+	font-family: $basefont;
+	font-size: ($size);
+	color:$color;
+	font-weight: ($weight);
+}
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+body{
+	h2{ @include fontbase(#000000, 52px, 200); clear: both; margin:0;padding:0;}//h2
+	h3{ @include fontbase(#000000, 20px, 200);margin: 0;padding: 0;}//h3
+	h4{@include fontbase(#333, 30px, 200);margin: 0;padding: 0;	}
+	p{@include fontbase(#333, 20px, 200);
+
+	}
+}
+.sidebar{
+	min-width: 180px;
+	width:20%;
+	top:0;
+	bottom: 0;
+	background: #0f0f0f;
+	border-right: 5px solid white;
+	box-shadow: 0 0 10px #333; 
+	float: left;
+	position: fixed;
+	padding:0 2.7%;
+	z-index: 999;
+	img.logo{
+		min-width: 80px;
+		max-width: 200px;
+		width: 100%;
+		height: auto;
+		margin:55% 0 30% -15%;
+	}
+	ul{
+		width: 70%;
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		li{
+		margin-bottom: 10px;
+		padding: 0;
+			a{
+			display: block;
+			width: 100%;
+			text-decoration: none;
+			@include fontbase(#ffffff, 20px, 400);
+			text-transform: lowercase;
+				&:hover{
+				@include fontbase($pink, 20px, 400);
+				margin-left: 5%;
+				}
+			}
+
+		}
+	}
+	.copyright {
+	p{
+	@include fontbase(#6D6E70, 9px, 200);
+	text-transform: uppercase;
+	margin: 0;
+	line-height: 150%;
+	}
+	a{
+	@include fontbase(lighten(#6D6E70, 30%), 9px, 200);// can do variable name to for the color
+	text-transform: uppercase;
+	text-decoration: none;
+	
+		}
+	}
+}
+			.sidebar ul li a span{
+				visibility: hidden;
+				color:$pink;
+			}
+			.sidebar ul li a:hover span{
+				visibility:visible;
+			}
+
+@mixin socio($bg_icon){
+	width: 32px;
+	height: 32px;
+	background:url($bg_icon);
+	display: inline-block;
+	margin:10% 0;
+	&:hover{
+		background-position: -32px 0px;
+	}	
+	
+}
+
+
+.socio1{
+	@include socio("3-Image_assets/icon-twitter-32x32.png")	
+}
+.socio2{
+	@include socio("3-Image_assets/icon-facebook-32x32.png")	
+}
+.socio3{
+	@include socio("3-Image_assets/icon-email-32x32.png")	
+}
+
+.twitter{
+		padding-right:20%;
+		float: right;
+		width: 180px;
+		height: 180px;
+	}//twitter
+
+.content{
+	max-width:880px;
+	width: (880px/1100px)*100%;
+	float: left;
+	margin-left: 20%;
+	.container{
+		padding-left:5%;
+		margin: 12% 0 0 0;
+		.left_container{
+			padding-right: 3%;
+			width: 75%;
+			float: left;
+			@include fontbase(black, 14px, 700);
+			span{
+				@include fontbase($pink, 16px, 700);
+			}
+		}
+		.we_are{
+			width: 25%;
+			float: right;	
+			border-left: 1px solid #666;
+			padding-left: 2%;
+			margin-bottom: 5%;
+			p{@include fontbase(#333, 14px, 200);}
+		}
+		.csi{
+			width: 25%;
+			float: right;	
+			margin:15% 0;
+			img{width: 100%;}
+		}
+	}//container
+	
+	.feature{
+		text-transform: lowercase;
+		float: left;
+		max-width: 140px;
+		margin: 3.5% 6% 3.5% 0;
+
+		
+		p{	@include fontbase(#808184, 20px, 200);margin: 0;padding: 0;}//p
+		a{
+			@include fontbase($pink, 20px, 200);
+			height: 25px;
+			margin-top: 10px;
+			display: block;
+			text-decoration: none;
+			
+			span{
+				display: inline-block;
+				width: 25px;
+				height: 25px;
+				background:url("3-Image_assets/icon-cta-25x25.png");
+				vertical-align: middle;
+			}//span
+			&:hover{
+				text-decoration: underline;
+				span{
+					background-position: -25px 0;
+				}//span
+			}//a&:hover
+
+		}//a
+	}//feature
+
+}//content
+
+.footer{
+	margin-left: 4.9%;
+	}
+
+
+
+/*///////////////////ABOUT PAGE////////////////////////*/
+
+@mixin pictures($pic){
+	width: 220px;
+	height: 220px;
+	-webkit-transition:all .3s;
+	float: left;
+	display: block;	
+	background: url($pic);
+	position: relative;
+	&:hover{background-position: -220px 0px;
+			.bio {
+  				display: block;
+  				z-index: 99;
+			}//hover .bio
+		}
+	p{	
+		position: absolute;
+		@include fontbase(#fff, 20px, 200);
+		background: black;
+		margin: 0;
+		padding: 1%;
+		display: inline-block;
+		opacity: .8;
+		&:first-child{
+			bottom: 28px;
+			left: 0;
+		}
+		&:nth-child(2){
+			@include fontbase($pink, 16px, 200);
+			padding: 2.5%;
+			bottom: 0;
+			left: 0;
+		}//nth-child(2)
+	}//p
+	.bio {
+		display: none;
+		position: absolute;
+		width: 300px;
+		height: 300px;
+		background: #000;
+		top: -220px;
+		left: 180px;
+		}
+
+}//@mixin pictures
+
+	
+.pic1{
+	clear: both;
+	@include pictures("3-Image_assets/about/01-HeatherPayne.jpg");
+	
+}
+.pic2{
+	@include pictures("3-Image_assets/about/02-PearlChen.jpg");
+		
+}
+.pic3{
+	@include pictures("3-Image_assets/about/03-MelissaCrnic.jpg");
+		
+}
+.pic4{
+	@include pictures("3-Image_assets/about/04-KatherineDuffy.jpg");
+		
+}
+.pic5{
+	@include pictures("3-Image_assets/about/05-KimGardner.jpg");
+		
+}
+.pic6{
+	@include pictures("3-Image_assets/about/06-JessicaHazen.jpg");
+		
+}
+.pic7{
+	@include pictures("3-Image_assets/about/07-VivianHui.jpg");
+	
+}
+.pic8{
+	@include pictures("3-Image_assets/about/08-JaniceJoo.jpg");
+		
+}
+.pic9{
+	@include pictures("3-Image_assets/about/09-AnnaKlibanov.jpg");
+		
+}
+.pic10{
+	@include pictures("3-Image_assets/about/10-VickiLaszlo.jpg");
+		
+}
+.pic11{
+	@include pictures("3-Image_assets/about/11-RochelleLatinsky.jpg");
+		
+}
+.pic12{
+	@include pictures("3-Image_assets/about/12-MariaMarino.jpg");
+		
+}
+.pic13{
+	@include pictures("3-Image_assets/about/13-BethMartin.jpg");
+	
+}
+.pic14{
+	@include pictures("3-Image_assets/about/14-AmritaMathur.jpg");
+		
+}
+.pic15{
+	@include pictures("3-Image_assets/about/15-LauraPlant.jpg");
+		
+}
+.pic16{
+	@include pictures("3-Image_assets/about/16-CrystalPrestonWatson.jpg");
+		
+}
+.pic17{
+	@include pictures("3-Image_assets/about/17-NicoleRashotte.jpg");
+		
+}
+.pic18{
+	@include pictures("3-Image_assets/about/18-ZahraSakkejha.jpg");
+		
+}
+.email{
+	@include pictures("none");
+	background:black;
+	p{@include fontbase($pink, 36px, 200);
+		padding:30px;
+	}
+}
+
+
+
+
+/* Portrait tablet and small desktops */
+			@media (max-width: 940px) {
+				body {
+					background:green;
+				}
+				.content{
+					.pictures{
+						margin-left:5%;
+					}
+				}
+			}
+			 
+			/* Landscape phone to portrait tablet */
+			@media (max-width: 767px) {
+				body {
+					background:red;
+				}//body
+				
+				.sidebar{
+					width: 100%;
+					height: auto;
+					bottom: auto;
+					border-right: 0;
+					border-bottom: 3px solid white;
+					
+					img.logo{
+						width: 15%;
+						margin: 2% auto;
+						float: left;
+					}//img.logo
+					ul{
+						width: 100%;
+						text-align: center;
+						margin: 4% auto 0;
+
+						li{	
+							display: inline;
+							&:nth-child(n+4){
+							display: none;
+						}
+							a{
+								display: inline;
+								font-size: 18px;
+								span{
+									visibility: hidden;
+									color:$pink;
+									}//span
+								&:hover{
+									margin-left: 0;
+									font-size: 18px;
+									span{
+										visibility:hidden;
+										}//span
+								}	
+							}//a
+						}//li
+					}//ul
+					.copyright{
+						display: none;
+					}//copyright
+					.socio{
+						display: none;
+					}//socio	
+				}//sidebar
+				.twitter{
+						display: none;
+					}//twitter
+				.content{
+					width: 100%;
+					display: block;
+					margin-left: 6%;
+					margin-top:12%;
+					
+					.container{
+						margin-top: 5%;
+						padding-left: 0;
+						width: 90%;
+						clear: both;
+						.left_container{
+							width: 100%;
+							float: left;
+							padding: 0;	
+							@include fontbase(black, 14px, 700);
+							span{
+								@include fontbase($pink, 16px, 700);
+							}//span
+						}//lef container
+						.we_are{
+							display: none;
+							width: 25%;
+							float: right;	
+							border-left: 1px solid #666;
+							padding-left: 2%;
+							margin-bottom: 5%;
+							p{@include fontbase(#333, 14px, 200);}//p
+						}//we_are
+						.csi{
+							margin: 5% auto;
+							float: none;
+							img{width: 100%;
+								display: block;	}
+
+						}//csi
+					}//container
+					.pictures{
+						margin-left: 0;
+					}
+				}//content
+				
+			 }
+			/* Landscape phones and down */
+			@media (max-width: 480px) {
+				body {
+					background:yellow;
+				}//body
+				.twitter{
+						display: none;
+					}//twitter
+				.content{
+					width: 100%;
+					display: block;
+					margin-left: 2%;
+					margin-top:15%;
+					
+					h2{ @include fontbase(#000000, 30px, 200); clear: both; margin: 0;}
+				}//content
+	
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

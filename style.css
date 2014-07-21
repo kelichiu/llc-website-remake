@@ -1,0 +1,1524 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+body h2 {
+  font-family: "Heveltica", sans-serif;
+  font-size: 52px;
+  color: black;
+  font-weight: 200;
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+body h3 {
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: black;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+body h4 {
+  font-family: "Heveltica", sans-serif;
+  font-size: 30px;
+  color: #333333;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+body p {
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: #333333;
+  font-weight: 200;
+}
+
+.sidebar {
+  min-width: 180px;
+  width: 20%;
+  top: 0;
+  bottom: 0;
+  background: #0f0f0f;
+  border-right: 5px solid white;
+  box-shadow: 0 0 10px #333;
+  float: left;
+  position: fixed;
+  padding: 0 2.7%;
+  z-index: 999;
+}
+.sidebar img.logo {
+  min-width: 80px;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  margin: 55% 0 30% -15%;
+}
+.sidebar ul {
+  width: 70%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.sidebar ul li {
+  margin-bottom: 10px;
+  padding: 0;
+}
+.sidebar ul li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+.sidebar ul li a:hover {
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: #b714a1;
+  font-weight: 400;
+  margin-left: 5%;
+}
+.sidebar .copyright p {
+  font-family: "Heveltica", sans-serif;
+  font-size: 9px;
+  color: #6d6e70;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 150%;
+}
+.sidebar .copyright a {
+  font-family: "Heveltica", sans-serif;
+  font-size: 9px;
+  color: #babbbc;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sidebar ul li a span {
+  visibility: hidden;
+  color: #b714a1;
+}
+
+.sidebar ul li a:hover span {
+  visibility: visible;
+}
+
+.socio1 {
+  width: 32px;
+  height: 32px;
+  background: url("3-Image_assets/icon-twitter-32x32.png");
+  display: inline-block;
+  margin: 10% 0;
+}
+.socio1:hover {
+  background-position: -32px 0px;
+}
+
+.socio2 {
+  width: 32px;
+  height: 32px;
+  background: url("3-Image_assets/icon-facebook-32x32.png");
+  display: inline-block;
+  margin: 10% 0;
+}
+.socio2:hover {
+  background-position: -32px 0px;
+}
+
+.socio3 {
+  width: 32px;
+  height: 32px;
+  background: url("3-Image_assets/icon-email-32x32.png");
+  display: inline-block;
+  margin: 10% 0;
+}
+.socio3:hover {
+  background-position: -32px 0px;
+}
+
+.twitter {
+  padding-right: 20%;
+  float: right;
+  width: 180px;
+  height: 180px;
+}
+
+.content {
+  max-width: 880px;
+  width: 80%;
+  float: left;
+  margin-left: 20%;
+}
+.content .container {
+  padding-left: 5%;
+  margin: 12% 0 0 0;
+}
+.content .container .left_container {
+  padding-right: 3%;
+  width: 75%;
+  float: left;
+  font-family: "Heveltica", sans-serif;
+  font-size: 14px;
+  color: black;
+  font-weight: 700;
+}
+.content .container .left_container span {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 700;
+}
+.content .container .we_are {
+  width: 25%;
+  float: right;
+  border-left: 1px solid #666;
+  padding-left: 2%;
+  margin-bottom: 5%;
+}
+.content .container .we_are p {
+  font-family: "Heveltica", sans-serif;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 200;
+}
+.content .container .csi {
+  width: 25%;
+  float: right;
+  margin: 15% 0;
+}
+.content .container .csi img {
+  width: 100%;
+}
+.content .feature {
+  text-transform: lowercase;
+  float: left;
+  max-width: 140px;
+  margin: 3.5% 6% 3.5% 0;
+}
+.content .feature p {
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: #808184;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+.content .feature a {
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: #b714a1;
+  font-weight: 200;
+  height: 25px;
+  margin-top: 10px;
+  display: block;
+  text-decoration: none;
+}
+.content .feature a span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url("3-Image_assets/icon-cta-25x25.png");
+  vertical-align: middle;
+}
+.content .feature a:hover {
+  text-decoration: underline;
+}
+.content .feature a:hover span {
+  background-position: -25px 0;
+}
+
+.footer {
+  margin-left: 4.9%;
+}
+
+/*///////////////////ABOUT PAGE////////////////////////*/
+.pic1 {
+  clear: both;
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/01-HeatherPayne.jpg");
+  position: relative;
+}
+.pic1:hover {
+  background-position: -220px 0px;
+}
+.pic1:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic1 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic1 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic1 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic1 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.pic2 {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/02-PearlChen.jpg");
+  position: relative;
+}
+.pic2:hover {
+  background-position: -220px 0px;
+}
+.pic2:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic2 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic2 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic2 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic2 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.pic3 {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/03-MelissaCrnic.jpg");
+  position: relative;
+}
+.pic3:hover {
+  background-position: -220px 0px;
+}
+.pic3:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic3 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic3 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic3 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic3 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.pic4 {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/04-KatherineDuffy.jpg");
+  position: relative;
+}
+.pic4:hover {
+  background-position: -220px 0px;
+}
+.pic4:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic4 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic4 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic4 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic4 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.pic5 {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/05-KimGardner.jpg");
+  position: relative;
+}
+.pic5:hover {
+  background-position: -220px 0px;
+}
+.pic5:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic5 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic5 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic5 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic5 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.pic6 {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/06-JessicaHazen.jpg");
+  position: relative;
+}
+.pic6:hover {
+  background-position: -220px 0px;
+}
+.pic6:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic6 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic6 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic6 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic6 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.pic7 {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/07-VivianHui.jpg");
+  position: relative;
+}
+.pic7:hover {
+  background-position: -220px 0px;
+}
+.pic7:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic7 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic7 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic7 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic7 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.pic8 {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/08-JaniceJoo.jpg");
+  position: relative;
+}
+.pic8:hover {
+  background-position: -220px 0px;
+}
+.pic8:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic8 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic8 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic8 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic8 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.pic9 {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/09-AnnaKlibanov.jpg");
+  position: relative;
+}
+.pic9:hover {
+  background-position: -220px 0px;
+}
+.pic9:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic9 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic9 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic9 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic9 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.pic10 {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/10-VickiLaszlo.jpg");
+  position: relative;
+}
+.pic10:hover {
+  background-position: -220px 0px;
+}
+.pic10:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic10 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic10 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic10 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic10 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.pic11 {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/11-RochelleLatinsky.jpg");
+  position: relative;
+}
+.pic11:hover {
+  background-position: -220px 0px;
+}
+.pic11:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic11 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic11 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic11 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic11 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.pic12 {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/12-MariaMarino.jpg");
+  position: relative;
+}
+.pic12:hover {
+  background-position: -220px 0px;
+}
+.pic12:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic12 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic12 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic12 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic12 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.pic13 {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/13-BethMartin.jpg");
+  position: relative;
+}
+.pic13:hover {
+  background-position: -220px 0px;
+}
+.pic13:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic13 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic13 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic13 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic13 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.pic14 {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/14-AmritaMathur.jpg");
+  position: relative;
+}
+.pic14:hover {
+  background-position: -220px 0px;
+}
+.pic14:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic14 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic14 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic14 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic14 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.pic15 {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/15-LauraPlant.jpg");
+  position: relative;
+}
+.pic15:hover {
+  background-position: -220px 0px;
+}
+.pic15:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic15 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic15 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic15 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic15 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.pic16 {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/16-CrystalPrestonWatson.jpg");
+  position: relative;
+}
+.pic16:hover {
+  background-position: -220px 0px;
+}
+.pic16:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic16 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic16 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic16 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic16 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.pic17 {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/17-NicoleRashotte.jpg");
+  position: relative;
+}
+.pic17:hover {
+  background-position: -220px 0px;
+}
+.pic17:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic17 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic17 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic17 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic17 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.pic18 {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("3-Image_assets/about/18-ZahraSakkejha.jpg");
+  position: relative;
+}
+.pic18:hover {
+  background-position: -220px 0px;
+}
+.pic18:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.pic18 p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.pic18 p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.pic18 p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.pic18 .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+
+.email {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: all .3s;
+  float: left;
+  display: block;
+  background: url("none");
+  position: relative;
+  background: black;
+}
+.email:hover {
+  background-position: -220px 0px;
+}
+.email:hover .bio {
+  display: block;
+  z-index: 99;
+}
+.email p {
+  position: absolute;
+  font-family: "Heveltica", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  background: black;
+  margin: 0;
+  padding: 1%;
+  display: inline-block;
+  opacity: .8;
+}
+.email p:first-child {
+  bottom: 28px;
+  left: 0;
+}
+.email p:nth-child(2) {
+  font-family: "Heveltica", sans-serif;
+  font-size: 16px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 2.5%;
+  bottom: 0;
+  left: 0;
+}
+.email .bio {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  top: -220px;
+  left: 180px;
+}
+.email p {
+  font-family: "Heveltica", sans-serif;
+  font-size: 36px;
+  color: #b714a1;
+  font-weight: 200;
+  padding: 30px;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  body {
+    background: green;
+  }
+
+  .content .pictures {
+    margin-left: 5%;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  body {
+    background: red;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    bottom: auto;
+    border-right: 0;
+    border-bottom: 3px solid white;
+  }
+  .sidebar img.logo {
+    width: 15%;
+    margin: 2% auto;
+    float: left;
+  }
+  .sidebar ul {
+    width: 100%;
+    text-align: center;
+    margin: 4% auto 0;
+  }
+  .sidebar ul li {
+    display: inline;
+  }
+  .sidebar ul li:nth-child(n+4) {
+    display: none;
+  }
+  .sidebar ul li a {
+    display: inline;
+    font-size: 18px;
+  }
+  .sidebar ul li a span {
+    visibility: hidden;
+    color: #b714a1;
+  }
+  .sidebar ul li a:hover {
+    margin-left: 0;
+    font-size: 18px;
+  }
+  .sidebar ul li a:hover span {
+    visibility: hidden;
+  }
+  .sidebar .copyright {
+    display: none;
+  }
+  .sidebar .socio {
+    display: none;
+  }
+
+  .twitter {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    display: block;
+    margin-left: 6%;
+    margin-top: 12%;
+  }
+  .content .container {
+    margin-top: 5%;
+    padding-left: 0;
+    width: 90%;
+    clear: both;
+  }
+  .content .container .left_container {
+    width: 100%;
+    float: left;
+    padding: 0;
+    font-family: "Heveltica", sans-serif;
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+  }
+  .content .container .left_container span {
+    font-family: "Heveltica", sans-serif;
+    font-size: 16px;
+    color: #b714a1;
+    font-weight: 700;
+  }
+  .content .container .we_are {
+    display: none;
+    width: 25%;
+    float: right;
+    border-left: 1px solid #666;
+    padding-left: 2%;
+    margin-bottom: 5%;
+  }
+  .content .container .we_are p {
+    font-family: "Heveltica", sans-serif;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 200;
+  }
+  .content .container .csi {
+    margin: 5% auto;
+    float: none;
+  }
+  .content .container .csi img {
+    width: 100%;
+    display: block;
+  }
+  .content .pictures {
+    margin-left: 0;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  body {
+    background: yellow;
+  }
+
+  .twitter {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    display: block;
+    margin-left: 2%;
+    margin-top: 15%;
+  }
+  .content h2 {
+    font-family: "Heveltica", sans-serif;
+    font-size: 30px;
+    color: black;
+    font-weight: 200;
+    clear: both;
+    margin: 0;
+  }
+}
